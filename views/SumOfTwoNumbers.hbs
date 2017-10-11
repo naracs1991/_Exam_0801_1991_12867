@@ -1,18 +1,17 @@
-<h1 class="center">Iniciar Sesión</h1>
-  <form action="/SumOfTwoNumbers" method="post">
-    <label>First Number</label>
-    <input type="number" name='txtfirstnumber'
-         value="{{txtfirstnumber}}"
-         placeholder="Please Input a Number"
-         /><br />
-
-   <label>Second Number</label>
-   <input type="number" name='txtsecondnumber'
-        value="{{txtsecondnumber}}"
-        placeholder="Please Input a Number"
-         /><br />
-
-  <label>Sum</label>
-  <input type="number" name='txtsum'
-      value="{{txtsum}}"
-         /><br />
+<h1>Sum of two Numbers</h1>
+<form action="/SumOfTwoNumbers" method="post">
+  <label>Enter the First Number Please</label>
+   <input "text-align:right" type="text" name="txtFNum" value="{{txtFNum}}">
+<br />
+  <label>Enter the Second Number Please</label>
+  <input style="text-align:right" type="text" name="txtSNum" value="{{txtSNum}}">
+<br />
+  <button type="submit" name="btnSum" value="add">Sum</button>
+</form>
+<div>
+  <ul>
+    {{#each Digit}}
+    <li>{{FirstNumber}}  {{SecondNumber}}  {{Answer}} </li>
+    {{/each}}
+  </ul>
+</div>
